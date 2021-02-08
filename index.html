@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+    }
+    .promo-block-banner {
+      width: 83%;
+      min-height: 400px;
+      background: black;
+      display: flex;
+    }
+    .promo-block-content {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+    }
+    .promo-block-image {
+      width: 50%;
+    }
+    .promo-block-title {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: #fff;
+      letter-spacing: 8px;
+      margin-top: 20px;
+    }
+    .promo-block-text-content {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: #db3838;
+      font-size: 2.8em;
+      margin-top: 15px;
+      font-weight: 600;
+    }
+    .promo-block-text-box {
+      display: flex;
+      flex-direction: column;
+    }
+    .promo-block-product-title {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: rgb(231, 231, 231);
+      font-size: 1.7em;
+      font-weight: 600;
+      margin-top: 28px;
+    }
+    .promo-block-price-box {
+      width: 230px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+    }
+    .promo-block-old-price {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 2.1em;
+      text-decoration: line-through;
+      color: grey;
+      font-weight: 100;
+    }
+    .promo-block-new-price {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 2.2em;
+      color: #db3838;
+      font-weight: 100;
+    }
+    .promo-block-clock {
+      display: flex;
+      align-items: flex-end;
+      margin-top: 12px;
+    }
+    .p-b-c-1, .p-b-c-2, .p-b-c-3 {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: 200;
+    }
+    .p-b-c-1 {
+      font-size: 2.9em;
+      color: #fff;
+    }
+    .p-b-c-2 {
+      font-size: 1.4em;
+      color: grey;
+      padding-left: 5px;
+      padding-bottom: 3px;
+    }
+    .p-b-c-3 {
+      font-size: 2.9em;
+      margin-left: 6px;
+      margin-right: 4px;
+      color: grey;
+    }
+    .promo-block-button {
+      width: 100%;
+      height: 50px;
+      background: #db3838;
+      border: none;
+      color: #fff;
+      margin-top: 45px;
+      cursor: pointer;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 1.3em;
+      font-weight: 300;
+      transition: .4s;
+    }
+    .promo-block-button:hover {
+      background: #fff;
+      color: black;
+    }
+    @media screen and (max-width: 1050px) {
+      .promo-block-banner {
+        flex-direction: column;
+        width: 90%;
+      }
+      .promo-block-content {
+        width: 100%;
+        padding-left: 10px;
+      }
+      .promo-block-image {
+        width: 100%;
+      }
+      .promo-block-text-content {
+        font-size: 2em;
+      }
+      .promo-block-title {
+        font-size: .9em;
+      }
+      .promo-block-button {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        width: 94%;
+      }
+      .promo-block-price-box {
+        width: 165px;
+      }
+      .promo-block-old-price {
+        font-size: 1.5em;
+      }
+      .promo-block-new-price {
+        font-size: 1.6em;
+      }
+      .promo-block-product-title  {
+        font-size: 1.5em;
+      }
+      .p-b-c-1 {
+        font-size: 2.5em;
+      }
+      .p-b-c-2 {
+        font-size: 1em;
+      }
+      .p-b-c-3 {
+        font-size: 2.5em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class='promo-block-banner'>
+    <div class='promo-block-content'>
+      <div class='promo-block-text-box'>
+        <div class='promo-block-title'>CODZIENNIE INNY PRODUKT!</div>
+        <div class='promo-block-text-content'>A dziś w promocji...</div>
+        <div class='promo-block-product-title'>Klawiatura gamingowa RED</div>
+        <!-- price -->
+        <div class='promo-block-price-box'>
+          <div class='promo-block-old-price'>89.99 zł</div>
+          <div class='promo-block-new-price'>75.99 zł</div>
+        </div>
+        <!-- clock -->
+        <div class='promo-block-clock'>
+          <span class='p-b-c-1'>12</span><span class='p-b-c-2'>/Godz</span><span class='p-b-c-3'>:</span>
+          <span class='p-b-c-1'>24</span><span class='p-b-c-2'>/Min</span><span class='p-b-c-3'>:</span>
+          <span class='p-b-c-1'>12</span><span class='p-b-c-2'>/Sek</span>
+        </div>
+        <button class='promo-block-button'>Sprawdź</button>
+      </div>
+    </div>
+    <img class='promo-block-image' src="photo.jpg" alt="">
+  </div>
+</body>
+</html>
